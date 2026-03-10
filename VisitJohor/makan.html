@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="makan_page_title">Syurga Makanan | Visit Johor</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo"><i class="fas fa-map-marker-alt"></i> VISIT <span>JOHOR</span></a>
+
+        <ul class="nav-links">
+  <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+  <li><a href="alam.html" data-i18n="nav_nature">Alam</a></li>
+  <li><a href="makan.html" class="active" data-i18n="nav_food">Makan</a></li>
+  <li><a href="penginapan.html" data-i18n="nav_stay">Penginapan</a></li>
+  <li><a href="belibelah.html" data-i18n="nav_shop">Beli-Belah</a></li>
+</ul>
+
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+
+        <!-- ✅ Dark Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+            <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+
+        <!-- ✅ Language Toggle -->
+        <button class="lang-btn" id="langToggle" type="button" aria-label="Change language">MS</button>
+    </nav>
+
+    <header class="hero" style="background-image: url('img.jpg/mknjohor.jpg');">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <span class="sub-title" data-i18n="makan_sub">10 Daerah, 1001 Rasa</span>
+            <h1 data-i18n="makan_title">SYURGA MAKANAN</h1>
+            <p data-i18n="makan_desc">Dari Asam Pedas hingga ke Briyani Gam. Terokai keunikan gastronomi Johor.</p>
+        </div>
+    </header>
+
+    <section class="destinations container">
+
+        <!-- ✅ ZON SELATAN -->
+        <div class="section-title" style="text-align: center; margin-bottom: 40px; margin-top: 40px;">
+            <h2 style="font-size: 2.5rem; color: #2d3436;" data-i18n="makan_zone_south">🏙️ Zon Selatan (JB • Kulai • Pontian)</h2>
+            <div class="line" style="width: 80px; height: 4px; background: #e17055; margin: 15px auto;"></div>
+        </div>
+
+        <div class="card-grid">
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('img.jpg/kacangpool.jpg');">
+                    <span class="tag" data-i18n="makan_s1_tag">Legend JB</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_s1_title">Kacang Pool Haji</h3>
+                    <span class="rating-badge" data-i18n="makan_s1_rating">⭐ 4.8 (Larkin)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_s1_loc">Johor Bahru</span></p>
+                    <p data-i18n="makan_s1_desc">Sarapan wajib orang JB! Kuah kacang pekat dimakan dengan roti bakar tebal.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Kacang+Pool+Haji+Larkin+JB" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('img.jpg/suptulang.jpg');">
+                    <span class="tag" data-i18n="makan_s2_tag">Dinner</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_s2_title">ZZ Sup Tulang</h3>
+                    <span class="rating-badge" data-i18n="makan_s2_rating">⭐ 4.6 (Jln Petri)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_s2_loc">Johor Bahru</span></p>
+                    <p data-i18n="makan_s2_desc">Sup tulang merah (Gearbox) yang padu. Makan pakai straw! Suasana santai.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=ZZ+Sup+Tulang+JB" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('img.jpg/murtabak.JPG');">
+                    <span class="tag" data-i18n="makan_s3_tag">Cheese Leleh</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_s3_title">Murtabak Majid Special</h3>
+                    <span class="rating-badge" data-i18n="makan_s3_rating">⭐ 4.7 (Kp. Kurnia)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_s3_loc">Johor Bahru</span></p>
+                    <p data-i18n="makan_s3_desc">Murtabak paling tebal dan padat di JB. Order yang 'Cheese Special'.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Murtabak+Majid+Special+No+1+JB" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('img.jpg/nasilemak.jpg');">
+                    <span class="tag" data-i18n="makan_s4_tag">Viral Kulai</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_s4_title">Nasi Lemak Wak Kentut</h3>
+                    <span class="rating-badge" data-i18n="makan_s4_rating">⭐ 4.9 (Beratur)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_s4_loc">Kulai</span></p>
+                    <p data-i18n="makan_s4_desc">Ayam goreng rempah dia memang juara. Nama unik, rasa meletop!</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Nasi+Lemak+Wak+Kentut+Kulai" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=800');">
+                    <span class="tag" data-i18n="makan_s5_tag">Mee Rebus</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_s5_title">Mee Rebus Sentap</h3>
+                    <span class="rating-badge" data-i18n="makan_s5_rating">⭐ 4.7 (Power)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_s5_loc">Pontian</span></p>
+                    <p data-i18n="makan_s5_desc">Mee rebus tulang yang kuahnya pekat likat. Makan tepi laut memang syahdu.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Mee+Rebus+Sentap+Coxn+Pontian" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('img.jpg/asampedas.jpg');">
+                    <span class="tag" data-i18n="makan_s6_tag">Seafood</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_s6_title">Asam Pedas Kukup</h3>
+                    <span class="rating-badge" data-i18n="makan_s6_rating">⭐ 4.6 (Fresh)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_s6_loc">Kukup, Pontian</span></p>
+                    <p data-i18n="makan_s6_desc">Ikan segar dari kelong terus masuk kuali. Kuah asam pedas stail Johor asli.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Asam+Pedas+Kukup+Pontian" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ✅ ZON UTARA -->
+        <div class="section-title" style="text-align: center; margin-bottom: 40px; margin-top: 60px;">
+            <h2 style="font-size: 2.5rem; color: #2d3436;" data-i18n="makan_zone_north">👑 Zon Utara (Muar • Tangkak • Segamat)</h2>
+            <div class="line" style="width: 80px; height: 4px; background: #fab1a0; margin: 15px auto;"></div>
+        </div>
+
+        <div class="card-grid">
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('img.jpg/mibandung.avif');">
+                    <span class="tag" data-i18n="makan_n1_tag">Wajib Try</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_n1_title">Mee Bandung Abu Bakar</h3>
+                    <span class="rating-badge" data-i18n="makan_n1_rating">⭐ 4.9 (Wah San)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_n1_loc">Muar</span></p>
+                    <p data-i18n="makan_n1_desc">Raja segala Mee Bandung. Kuah udang kering original Muar.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Mee+Bandung+Abu+Bakar+Hanipah+Muar" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('img.jpg/asampedas2.jpg');">
+                    <span class="tag" data-i18n="makan_n2_tag">Spicy</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_n2_title">Asam Pedas Parit Jawa</h3>
+                    <span class="rating-badge" data-i18n="makan_n2_rating">⭐ 4.7 (Maharani)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_n2_loc">Muar</span></p>
+                    <p data-i18n="makan_n2_desc">Asam pedas ikan sembilang claypot. Pedas dia memang 'kick'!</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Asam+Pedas+Parit+Jawa+Muar" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('img.jpg/satay.jpg');">
+                    <span class="tag" data-i18n="makan_n3_tag">Breakfast</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_n3_title">R&H Satay (Satay Pagi)</h3>
+                    <span class="rating-badge" data-i18n="makan_n3_rating">⭐ 4.8 (Tradisi)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_n3_loc">Muar</span></p>
+                    <p data-i18n="makan_n3_desc">Orang Muar makan satay waktu sarapan! Daging empuk dan kuah kacang pekat.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=R%26H+Satay+Maharani+Muar" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('img.jpg/nasiayam.jpg');">
+                    <span class="tag" data-i18n="makan_n4_tag">Old School</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_n4_title">Nasi Ayam Ali Tangkak</h3>
+                    <span class="rating-badge" data-i18n="makan_n4_rating">⭐ 4.6 (Famous)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_n4_loc">Tangkak</span></p>
+                    <p data-i18n="makan_n4_desc">Kedai nasi ayam paling legend di Tangkak. Ayam roasted dia juicy.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Nasi+Ayam+Ali+Tangkak" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('img.jpg/segamat.jpg');">
+                    <span class="tag" data-i18n="makan_n5_tag">Unik</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_n5_title">Roti Canai Terbang</h3>
+                    <span class="rating-badge" data-i18n="makan_n5_rating">⭐ 4.5 (Show)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_n5_loc">Segamat</span></p>
+                    <p data-i18n="makan_n5_desc">Bukan sekadar makan, tapi tengok show roti canai terbang!</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Roti+Canai+Terbang+Segamat" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ✅ ZON TENGAH -->
+        <div class="section-title" style="text-align: center; margin-bottom: 40px; margin-top: 60px;">
+            <h2 style="font-size: 2.5rem; color: #2d3436;" data-i18n="makan_zone_central">🚂 Zon Tengah (Batu Pahat • Kluang)</h2>
+            <div class="line" style="width: 80px; height: 4px; background: #6c5ce7; margin: 15px auto;"></div>
+        </div>
+
+        <div class="card-grid">
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=800');">
+                    <span class="tag" data-i18n="makan_c1_tag">Power</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_c1_title">Nasi Bariani Power</h3>
+                    <span class="rating-badge" data-i18n="makan_c1_rating">⭐ 4.8 (Taman Soga)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_c1_loc">Batu Pahat</span></p>
+                    <p data-i18n="makan_c1_desc">BP terkenal sebagai 'Syurga Briyani'. Kambing lembut, nasi beraroma.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=BP+Bariani+Power+Taman+Soga" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('img.jpg/kluang.jpg');">
+                    <span class="tag" data-i18n="makan_c2_tag">Heritage</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_c2_title">Kluang Rail Coffee</h3>
+                    <span class="rating-badge" data-i18n="makan_c2_rating">⭐ 4.9 (Stesen Keretapi)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_c2_loc">Kluang</span></p>
+                    <p data-i18n="makan_c2_desc">Kedai kopi original sejak 1938. Roti bakar & kopi kluang nostalgia.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Kluang+Rail+Coffee+Stesen+KTM" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ✅ ZON TIMUR -->
+        <div class="section-title" style="text-align: center; margin-bottom: 40px; margin-top: 60px;">
+            <h2 style="font-size: 2.5rem; color: #2d3436;" data-i18n="makan_zone_east">🌊 Zon Timur (Kota Tinggi • Mersing)</h2>
+            <div class="line" style="width: 80px; height: 4px; background: #00cec9; margin: 15px auto;"></div>
+        </div>
+
+        <div class="card-grid">
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('img.jpg/belangkas.jpg');">
+                    <span class="tag" data-i18n="makan_e1_tag">Rare</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_e1_title">Belangkas Mahkota</h3>
+                    <span class="rating-badge" data-i18n="makan_e1_rating">⭐ 4.6 (Eksotik)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_e1_loc">Kota Tinggi</span></p>
+                    <p data-i18n="makan_e1_desc">Pakar masak Asam Pedas Belangkas. Menu rare yang susah cari.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Restoran+Belangkas+Mahkota+Kota+Tinggi" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image: url('img.jpg/waruncelup.jpg');">
+                    <span class="tag" data-i18n="makan_e2_tag">Tepi Pantai</span>
+                </div>
+                <div class="card-body">
+                    <h3 data-i18n="makan_e2_title">Warung Celup Tepung</h3>
+                    <span class="rating-badge" data-i18n="makan_e2_rating">⭐ 4.7 (Tanjung Resang)</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> <span data-i18n="makan_e2_loc">Mersing</span></p>
+                    <p data-i18n="makan_e2_desc">Seafood fresh dari laut dicelup tepung panas-panas.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Warung+Celup+Tepung+Tanjung+Resang+Mersing" target="_blank" class="btn-action btn-loc">
+                            <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>VISIT <span>JOHOR</span></h3>
+            <p data-i18n="footer_desc">Official tourism guide to the Southern Gem of Malaysia.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="copyright">© 2026 Visit Johor. Developed by Haney.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menu Toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (menuBtn && navLinks) {
+            menuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        // Scroll Reveal Animation
+        window.addEventListener('scroll', reveal);
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+            for(var i=0; i<reveals.length; i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                if(revealtop < windowheight - 150){
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if(!navbar) return;
+            if(window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        });
+    </script>
+
+    <script src="places-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

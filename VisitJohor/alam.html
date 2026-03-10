@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alam & Hiburan | Visit Johor</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo"><i class="fas fa-map-marker-alt"></i> VISIT <span>JOHOR</span></a>
+
+    
+    <ul class="nav-links">
+  <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+  <li><a href="alam.html" class="active" data-i18n="nav_nature">Alam</a></li>
+  <li><a href="makan.html" data-i18n="nav_food">Makan</a></li>
+  <li><a href="penginapan.html" data-i18n="nav_stay">Penginapan</a></li>
+  <li><a href="belibelah.html" data-i18n="nav_shop">Beli-Belah</a></li>
+</ul>
+
+    <div class="menu-btn"><i class="fas fa-bars"></i></div>
+
+    <!-- ✅ Dark Mode Toggle -->
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <!-- ✅ Language Toggle -->
+    <button class="lang-btn" id="langToggle" type="button" aria-label="Change language">MS</button>
+  </nav>
+
+  <header class="hero" style="background-image: url('img.jpg/bgbgmain.jpg'); background-size: cover; background-position: center;">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <span class="sub-title" data-i18n="alam_sub">Keajaiban Alam & Keseronokan</span>
+
+      <!-- ✅ HERO TITLE i18n -->
+      <h1 data-i18n="alam_title">ALAM</h1>
+
+      <p data-i18n="alam_desc">Dari hutan hijau hingga ke Legoland! Semuanya ada di Johor.</p>
+    </div>
+  </header>
+
+  <section class="destinations container">
+
+    <!-- ✅ SECTION TITLE i18n -->
+    <div class="section-title" style="text-align: center; margin-bottom: 40px; margin-top: 40px;">
+      <h2 style="font-size: 2.5rem; color: #2d3436;" data-i18n="alam_sec_islands">🏝️ Pulau Peranginan</h2>
+      <div class="line" style="width: 80px; height: 4px; background: #0984e3; margin: 15px auto;"></div>
+    </div>
+
+    <div class="card-grid">
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image: url('img.jpg/pulaurawa.jpg');">
+          <span class="tag">Luxury</span>
+        </div>
+        <div class="card-body">
+          <h3>Pulau Rawa</h3>
+          <span class="rating-badge">⭐ 4.9 (Excellent)</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Mersing</p>
+          <p>"Maldives of Johor". Air jernih kristal, gelongsor air ikonik, dan pasir putih halus.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/Pulau+Rawa+Mersing" target="_blank" class="btn-action btn-loc" style="width: 100%;">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map_full">Lihat Lokasi (Map)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?q=80&w=800');">
+          <span class="tag">Diving</span>
+        </div>
+        <div class="card-body">
+          <h3>Pulau Tioman</h3>
+          <span class="rating-badge">⭐ 4.8 (Popular)</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Akses Mersing</p>
+          <p>Syurga penyelam skuba. Terumbu karang yang hidup dan hidupan laut yang pelbagai.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/Pulau+Tioman" target="_blank" class="btn-action btn-loc" style="width: 100%;">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map_full">Lihat Lokasi (Map)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?q=80&w=800');">
+          <span class="tag">Hidden Gem</span>
+        </div>
+        <div class="card-body">
+          <h3>Pulau Besar</h3>
+          <span class="rating-badge">⭐ 4.7 (Tenang)</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Mersing</p>
+          <p>Sangat tenang, air biru, dan kurang sesak. Sesuai untuk healing.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/Pulau+Besar+Mersing" target="_blank" class="btn-action btn-loc" style="width: 100%;">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map_full">Lihat Lokasi (Map)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ SECTION TITLE i18n -->
+    <div class="section-title" style="text-align: center; margin-bottom: 40px; margin-top: 60px;">
+      <h2 style="font-size: 2.5rem; color: #2d3436;" data-i18n="alam_sec_forest">🌲 Hutan & Gunung</h2>
+      <div class="line" style="width: 80px; height: 4px; background: #00b894; margin: 15px auto;"></div>
+    </div>
+
+    <div class="card-grid">
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image: url('img.jpg/gunungledang.jpg');">
+          <span class="tag">Hardcore</span>
+        </div>
+        <div class="card-body">
+          <h3>Gunung Ledang</h3>
+          <span class="rating-badge">⭐ 4.8 (Lagenda)</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Tangkak</p>
+          <p>Gunung tertinggi Johor. Wajib ada permit. Trek mencabar tapi pemandangan berbaloi.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/Gunung+Ledang" target="_blank" class="btn-action btn-loc" style="width: 100%;">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map_full">Lihat Lokasi (Map)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=800');">
+          <span class="tag">Beginner</span>
+        </div>
+        <div class="card-body">
+          <h3>Gunung Lambak</h3>
+          <span class="rating-badge">⭐ 4.6 (Santai)</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Kluang</p>
+          <p>Sangat sesuai untuk beginner training. Dekat dengan bandar Kluang.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/Gunung+Lambak" target="_blank" class="btn-action btn-loc" style="width: 100%;">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map_full">Lihat Lokasi (Map)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image: url('img.jpg/gunungpulai.jpg');">
+          <span class="tag">Tarmac</span>
+        </div>
+        <div class="card-body">
+          <h3>Gunung Pulai</h3>
+          <span class="rating-badge">⭐ 4.7 (Family)</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Kulai</p>
+          <p>Ada jalan tar sampai puncak. Ramai orang jogging. Ada air terjun di kaki gunung.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/Gunung+Pulai" target="_blank" class="btn-action btn-loc" style="width: 100%;">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map_full">Lihat Lokasi (Map)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ SECTION TITLE i18n -->
+    <div class="section-title" style="text-align: center; margin-bottom: 40px; margin-top: 60px;">
+      <h2 style="font-size: 2.5rem; color: #2d3436;" data-i18n="alam_sec_beach">🌊 Pantai & Air Terjun</h2>
+      <div class="line" style="width: 80px; height: 4px; background: #0984e3; margin: 15px auto;"></div>
+    </div>
+
+    <div class="card-grid">
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image: url('img.jpg/desarubeach.jpg');">
+          <span class="tag">Top Pick</span>
+        </div>
+        <div class="card-body">
+          <h3>Desaru Beach</h3>
+          <span class="rating-badge">⭐ 4.8 (Viral)</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Kota Tinggi</p>
+          <p>Pantai landai yang panjang dan bersih. Dikelilingi resort mewah bertaraf antarabangsa.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/Desaru+Beach" target="_blank" class="btn-action btn-loc" style="width: 100%;">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map_full">Lihat Lokasi (Map)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image: url('img.jpg/airtejunpulai.jpg.avif');">
+          <span class="tag">Picnic</span>
+        </div>
+        <div class="card-body">
+          <h3>Air Terjun Kota Tinggi</h3>
+          <span class="rating-badge">⭐ 4.5 (Sejuk)</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Kota Tinggi</p>
+          <p>Air terjun bertingkat. Sesuai bawa family mandi manda. Fasiliti lengkap.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/Kota+Tinggi+Waterfalls" target="_blank" class="btn-action btn-loc" style="width: 100%;">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map_full">Lihat Lokasi (Map)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800');">
+          <span class="tag">Camping</span>
+        </div>
+        <div class="card-body">
+          <h3>Pantai Air Papan</h3>
+          <span class="rating-badge">⭐ 4.4 (Santai)</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Mersing</p>
+          <p>Air laut cetek dan tenang. Lokasi popular untuk camping dan "OOTD" waktu senja.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/Pantai+Air+Papan" target="_blank" class="btn-action btn-loc" style="width: 100%;">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map_full">Lihat Lokasi (Map)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✅ SECTION TITLE i18n -->
+    <div class="section-title" style="text-align: center; margin-bottom: 40px; margin-top: 60px;">
+      <h2 style="font-size: 2.5rem; color: #2d3436;" data-i18n="alam_sec_themepark">🎡 Hiburan & Taman Tema</h2>
+      <div class="line" style="width: 80px; height: 4px; background: #fdcb6e; margin: 15px auto;"></div>
+    </div>
+
+    <div class="card-grid">
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image: url('img.jpg/legoland.jpg');">
+          <span class="tag">International</span>
+        </div>
+        <div class="card-body">
+          <h3>Legoland Malaysia</h3>
+          <span class="rating-badge">⭐ 4.9 (Wajib Pergi)</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Iskandar Puteri</p>
+          <p>Taman tema LEGO pertama di Asia! Ada Rollercoaster, Waterpark, dan Aquarium Sea Life.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/Legoland+Malaysia" target="_blank" class="btn-action btn-loc" style="width: 100%;">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map_full">Lihat Lokasi (Map)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image: url('img.jpg/desaruwaterpark.jpg.png');">
+          <span class="tag">Waterpark</span>
+        </div>
+        <div class="card-body">
+          <h3>Desaru Adventure Waterpark</h3>
+          <span class="rating-badge">⭐ 4.8 (Fun)</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Desaru Coast</p>
+          <p>Mempunyai kolam ombak terbesar di Asia Tenggara! Sesuai untuk semua peringkat umur.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/Desaru+Coast+Adventure+Waterpark" target="_blank" class="btn-action btn-loc" style="width: 100%;">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map_full">Lihat Lokasi (Map)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image: url('img.jpg/sealife.png');">
+          <span class="tag">Indoor</span>
+        </div>
+        <div class="card-body">
+          <h3>Sea Life Malaysia</h3>
+          <span class="rating-badge">⭐ 4.7 (Edu)</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Iskandar Puteri</p>
+          <p>Lihat hidupan laut secara dekat. Berada betul-betul di sebelah pintu masuk Legoland.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/Sea+Life+Malaysia" target="_blank" class="btn-action btn-loc" style="width: 100%;">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map_full">Lihat Lokasi (Map)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <h3>VISIT <span>JOHOR</span></h3>
+      <p data-i18n="footer_desc">Official tourism guide to the Southern Gem of Malaysia.</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p class="copyright">© 2026 Visit Johor. Developed by Haney.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.navbar');
+      if (window.scrollY > 50) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    });
+
+    function reveal() {
+      var reveals = document.querySelectorAll('.reveal');
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        if (elementTop < windowHeight - 150) {
+          reveals[i].classList.add('active');
+        }
+      }
+    }
+    window.addEventListener('scroll', reveal);
+    reveal();
+  </script>
+
+  <!-- ✅ Global shared script -->
+  <script src="app.js"></script>
+  <script src="places-data.js"></script>
+</body>
+</html>
