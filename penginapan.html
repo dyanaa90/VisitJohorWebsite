@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penginapan Johor | Visit Johor</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><i class="fas fa-map-marker-alt"></i> VISIT <span>JOHOR</span></a>
+
+        <ul class="nav-links">
+  <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+  <li><a href="alam.html" data-i18n="nav_nature">Alam</a></li>
+  <li><a href="makan.html"  data-i18n="nav_food">Makan</a></li>
+  <li><a href="penginapan.html" class="active"data-i18n="nav_stay">Penginapan</a></li>
+  <li><a href="belibelah.html" data-i18n="nav_shop">Beli-Belah</a></li>
+</ul>
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+
+        <!-- ✅ Dark Mode Toggle (ikut style page makan) -->
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+            <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+
+        <!-- ✅ Language Toggle -->
+        <button class="lang-btn" id="langToggle" type="button" aria-label="Change language">MS</button>
+    </nav>
+
+    <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1920');">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <span class="sub-title" data-i18n="stay_sub">Selesa & Mewah</span>
+            <h1 data-i18n="stay_title">PENGINAPAN TERBAIK</h1>
+            <p data-i18n="stay_desc">Pilih hotel, resort atau homestay dan tempah percutian anda sekarang!</p>
+        </div>
+    </header>
+
+    <section class="destinations container">
+
+        <!-- ===================== ZON SELATAN ===================== -->
+        <div class="section-title" style="text-align:center; margin-bottom:40px; margin-top:40px;">
+            <h2 style="font-size:2.5rem; color:#2d3436;">🏙️ Zon Selatan (JB • Kulai • Pontian)</h2>
+            <div class="line" style="width:80px; height:4px; background:#e67e22; margin:15px auto;"></div>
+        </div>
+
+        <div class="card-grid">
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/amarihotel.webp');">
+                    <span class="tag">5 Bintang</span>
+                </div>
+                <div class="card-body">
+                    <h3>Amari Johor Bahru</h3>
+                    <span class="rating-badge">⭐ 4.8</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Pusat Bandar, JB</p>
+                    <p>Lokasi paling strategik: dekat Komtar JBCC & City Square.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Amari+Johor+Bahru" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('Amari Johor Bahru')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/ksl.webp');">
+                    <span class="tag">Shopping</span>
+                </div>
+                <div class="card-body">
+                    <h3>KSL Hotel & Resort</h3>
+                    <span class="rating-badge">⭐ 4.5</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Taman Abad, JB</p>
+                    <p>Hotel atas mall, ada waterpark — sesuai family.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=KSL+Hotel+%26+Resort+Johor+Bahru" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('KSL Hotel & Resort')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/z\ hotel.webp');">
+                    <span class="tag">Butik</span>
+                </div>
+                <div class="card-body">
+                    <h3>Z Hotel</h3>
+                    <span class="rating-badge">⭐ 4.6</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Wong Ah Fook, JB</p>
+                    <p>Interior lawa & dekat Pasar Karat.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Z+Hotel+Johor+Bahru" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('Z Hotel JB')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/r&f.jpg');">
+                    <span class="tag">Airbnb</span>
+                </div>
+                <div class="card-body">
+                    <h3>R&F Princess Cove</h3>
+                    <span class="rating-badge">⭐ 4.7</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Tanjung Puteri, JB</p>
+                    <p>Apartment moden view Singapore — best staycation.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=R%26F+Princess+Cove+Johor+Bahru" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('R&F Princess Cove')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/troce.jpg');">
+                    <span class="tag">Hipster</span>
+                </div>
+                <div class="card-body">
+                    <h3>Trove Johor Bahru</h3>
+                    <span class="rating-badge">⭐ 4.4</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Jalan Dato Abdullah, JB</p>
+                    <p>Bilik tema pop-art unik, gambar cantik untuk IG.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Trove+Johor+Bahru" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('Trove Johor Bahru')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/banafee.jpg');">
+                    <span class="tag">Homestay</span>
+                </div>
+                <div class="card-body">
+                    <h3>Banafee Village</h3>
+                    <span class="rating-badge">⭐ 4.3</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Danga Bay, JB</p>
+                    <p>Stay gaya kampung moden dalam bandar.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Banafee+Village+Johor+Bahru" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('Banafee Village')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kulai -->
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/creator.jpg');">
+                    <span class="tag">Business</span>
+                </div>
+                <div class="card-body">
+                    <h3>Creator Hotel</h3>
+                    <span class="rating-badge">⭐ 4.5</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Kulai</p>
+                    <p>Hotel moden, bilik luas & kemas — sesuai transit.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Creator+Hotel+Kulai" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('Creator Hotel')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800');">
+                    <span class="tag">Resort</span>
+                </div>
+                <div class="card-body">
+                    <h3>Rina Balinese Resort</h3>
+                    <span class="rating-badge">⭐ 4.3</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Senai / Kulai</p>
+                    <p>Vibe Bali dengan nature & spa — best healing.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Rina+Balinese+Resort+Senai" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('Rina Balinese Resort')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pontian -->
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/kukup.jpg');">
+                    <span class="tag">Chalet</span>
+                </div>
+                <div class="card-body">
+                    <h3>Kukup XO Resort</h3>
+                    <span class="rating-badge">⭐ 4.5</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Kukup, Pontian</p>
+                    <p>Chalet atas air — syok untuk BBQ & family day.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Kukup+XO+Resort+Pontian" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('Kukup XO Resort')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== ZON UTARA ===================== -->
+        <div class="section-title" style="text-align:center; margin-bottom:40px; margin-top:60px;">
+            <h2 style="font-size:2.5rem; color:#2d3436;">👑 Zon Utara (Muar • Tangkak • Segamat)</h2>
+            <div class="line" style="width:80px; height:4px; background:#e67e22; margin:15px auto;"></div>
+        </div>
+
+        <div class="card-grid">
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/muartraders.jpg');">
+                    <span class="tag">Classic</span>
+                </div>
+                <div class="card-body">
+                    <h3>Muar Traders Hotel</h3>
+                    <span class="rating-badge">⭐ 4.4</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Muar</p>
+                    <p>Landmark Muar, sesuai untuk trip makan-makan.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Muar+Traders+Hotel" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('Muar Traders Hotel')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/gunungledangresort.jpg');">
+                    <span class="tag">Nature</span>
+                </div>
+                <div class="card-body">
+                    <h3>Gunung Ledang Resort</h3>
+                    <span class="rating-badge">⭐ 4.5</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Tangkak</p>
+                    <p>Tenang, dekat alam — sesuai untuk rehat & healing.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Gunung+Ledang+Resort+Tangkak" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('Gunung Ledang Resort')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/viphotel.jpg');">
+                    <span class="tag">Famous</span>
+                </div>
+                <div class="card-body">
+                    <h3>VIP Hotel</h3>
+                    <span class="rating-badge">⭐ 4.6</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Segamat</p>
+                    <p>Antara hotel paling popular di Segamat.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=VIP+Hotel+Segamat" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('VIP Hotel Segamat')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== ZON TENGAH ===================== -->
+        <div class="section-title" style="text-align:center; margin-bottom:40px; margin-top:60px;">
+            <h2 style="font-size:2.5rem; color:#2d3436;">🚂 Zon Tengah (Batu Pahat • Kluang)</h2>
+            <div class="line" style="width:80px; height:4px; background:#e67e22; margin:15px auto;"></div>
+        </div>
+
+        <div class="card-grid">
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/katerina\ hotel.jpg');">
+                    <span class="tag">Grand</span>
+                </div>
+                <div class="card-body">
+                    <h3>The Katerina Hotel</h3>
+                    <span class="rating-badge">⭐ 4.7</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Batu Pahat</p>
+                    <p>Hotel besar & selesa — sesuai family dan event.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=The+Katerina+Hotel+Batu+Pahat" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('The Katerina Hotel')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/kluang\ railway\ stay.webp');">
+                    <span class="tag">Heritage</span>
+                </div>
+                <div class="card-body">
+                    <h3>Kluang Rail Coffee Stay</h3>
+                    <span class="rating-badge">⭐ 4.6</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Kluang</p>
+                    <p>Konsep “heritage stay” — dekat vibe stesen & kopi.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Kluang+Johor+Accommodation" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('Kluang Rail Coffee Stay')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===================== ZON TIMUR ===================== -->
+        <div class="section-title" style="text-align:center; margin-bottom:40px; margin-top:60px;">
+            <h2 style="font-size:2.5rem; color:#2d3436;">🌊 Zon Timur (Kota Tinggi • Mersing)</h2>
+            <div class="line" style="width:80px; height:4px; background:#e67e22; margin:15px auto;"></div>
+        </div>
+
+        <div class="card-grid">
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/hard\ rock\ hotel.jpg');">
+                    <span class="tag">Luxury</span>
+                </div>
+                <div class="card-body">
+                    <h3>Hard Rock Hotel Desaru Coast</h3>
+                    <span class="rating-badge">⭐ 4.9</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Desaru, Kota Tinggi</p>
+                    <p>Vibe muzik, kolam besar — memang premium.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Hard+Rock+Hotel+Desaru+Coast" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('Hard Rock Hotel Desaru Coast')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('img.jpg/rawa\ island\ resort.jpg');">
+                    <span class="tag">Exclusive</span>
+                </div>
+                <div class="card-body">
+                    <h3>Rawa Island Resort</h3>
+                    <span class="rating-badge">⭐ 4.9</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Pulau Rawa, Mersing</p>
+                    <p>Air jernih & pasir putih — feel macam Maldives.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Rawa+Island+Resort+Mersing" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('Rawa Island Resort')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro-card reveal">
+                <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=800');">
+                    <span class="tag">Backpacker</span>
+                </div>
+                <div class="card-body">
+                    <h3>Traveller Stay Mersing</h3>
+                    <span class="rating-badge">⭐ 4.3</span>
+                    <p class="location"><i class="fas fa-map-pin"></i> Bandar Mersing</p>
+                    <p>Bajet & mudah untuk island hopping.</p>
+                    <div class="card-actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Hostel+Mersing" target="_blank" class="btn-action btn-loc"><i class="fas fa-location-arrow"></i> Map</a>
+                        <button class="btn-action btn-book" onclick="openBooking('Traveller Stay Mersing')"><i class="fas fa-calendar-check"></i> Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ===================== BOOKING MODAL ===================== -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeBooking()">&times;</span>
+            <h2 style="text-align:center; color:#2c3e50;">Tempah Sekarang</h2>
+            <p id="hotelNameDisplay" style="text-align:center; color:#e67e22; font-weight:800; margin: 8px 0 18px;"></p>
+
+            <form id="bookingForm" onsubmit="handleBooking(event)">
+                <div class="form-group">
+                    <label>Nama Penuh</label>
+                    <input type="text" placeholder="Masukkan nama anda" required />
+                </div>
+
+                <div class="form-group">
+                    <label>Bilangan Tetamu</label>
+                    <select required>
+                        <option value="" selected disabled>Pilih bilangan tetamu</option>
+                        <option>1</option><option>2</option><option>3</option><option>4</option>
+                        <option>5+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Tarikh Check-in</label>
+                    <input type="date" required />
+                </div>
+
+                <div class="form-group">
+                    <label>No. Telefon</label>
+                    <input type="tel" placeholder="Contoh: 012-3456789" required />
+                </div>
+
+                <button type="submit" class="btn-submit">Hantar Tempahan</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>VISIT <span>JOHOR</span></h3>
+            <p>Official tourism guide to the Southern Gem of Malaysia.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="copyright">© 2026 Visit Johor. Developed by Haney.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Menu Toggle
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        menuBtn.addEventListener('click', () => navLinks.classList.toggle('active'));
+
+        // Scroll Reveal Animation
+        window.addEventListener('scroll', reveal);
+        function reveal(){
+            const reveals = document.querySelectorAll('.reveal');
+            for(let i=0; i<reveals.length; i++){
+                const windowheight = window.innerHeight;
+                const revealtop = reveals[i].getBoundingClientRect().top;
+                if(revealtop < windowheight - 150){
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if(window.scrollY > 50) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        });
+
+        // BOOKING MODAL
+        function openBooking(hotelName) {
+            document.getElementById('bookingModal').style.display = 'block';
+            document.getElementById('hotelNameDisplay').innerText = hotelName;
+        }
+
+        function closeBooking() {
+            document.getElementById('bookingModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('bookingModal')) {
+                closeBooking();
+            }
+        }
+
+        function handleBooking(e) {
+            e.preventDefault();
+            const hotel = document.getElementById('hotelNameDisplay').innerText;
+            alert("✅ Tempahan Berjaya!\n\nTerima kasih kerana menempah di " + hotel + ".\nPihak penginapan akan menghubungi anda untuk pengesahan.");
+            closeBooking();
+            document.getElementById('bookingForm').reset();
+        }
+    </script>
+<script src="places-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

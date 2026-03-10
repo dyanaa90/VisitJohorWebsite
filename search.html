@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carian | Visit Johor</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    .search-hero {
+      padding: 140px 8% 60px;
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+                  url('img.jpg/johor.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+    }
+
+    .search-hero .sub-title {
+      display: inline-block;
+      font-size: 0.95rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      color: #dfe6e9;
+    }
+
+    .search-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .search-hero p {
+      max-width: 760px;
+      margin: 0 auto 25px;
+      font-size: 1.05rem;
+      color: #f1f2f6;
+      line-height: 1.7;
+    }
+
+    .search-pill {
+      display: inline-block;
+      padding: 10px 20px;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 999px;
+      font-weight: 600;
+      backdrop-filter: blur(10px);
+    }
+
+    .search-results-section {
+      padding: 60px 8%;
+      background: #f8f9fb;
+      min-height: 70vh;
+    }
+
+    .search-box-panel {
+      max-width: 1000px;
+      margin: -40px auto 35px;
+      background: #fff;
+      padding: 18px;
+      border-radius: 24px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      position: relative;
+      z-index: 3;
+    }
+
+    .search-form-custom {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .search-input-wrap {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      background: #f5f7fb;
+      border: 1px solid #e3e7ef;
+      border-radius: 18px;
+      padding: 0 18px;
+      min-height: 58px;
+    }
+
+    .search-input-wrap i {
+      color: #7f8c8d;
+      font-size: 1rem;
+      margin-right: 12px;
+    }
+
+    .search-input-wrap input {
+      width: 100%;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 1rem;
+      color: #2d3436;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .search-submit-btn {
+      border: none;
+      background: linear-gradient(135deg, #ff5a5f, #ff3b30);
+      color: #fff;
+      padding: 16px 28px;
+      border-radius: 18px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .search-submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(255, 90, 95, 0.25);
+    }
+
+    .search-summary {
+      max-width: 1200px;
+      margin: 0 auto 25px;
+    }
+
+    .search-summary h2 {
+      font-size: 2rem;
+      color: #2d3436;
+      margin-bottom: 10px;
+    }
+
+    .search-summary p {
+      color: #636e72;
+      font-size: 1rem;
+    }
+
+    .search-count {
+      margin-top: 14px;
+      font-weight: 600;
+      color: #2d3436;
+    }
+
+    .search-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+    }
+
+    .search-card {
+      background: #fff;
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.35s ease;
+    }
+
+    .search-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+    }
+
+    .search-card-image {
+      height: 220px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .search-card-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.25), rgba(0,0,0,0.05));
+    }
+
+    .search-card-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      z-index: 2;
+      background: rgba(255,255,255,0.92);
+      color: #2d3436;
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .search-card-body {
+      padding: 22px;
+    }
+
+    .search-card-body h3 {
+      font-size: 1.25rem;
+      color: #2d3436;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .search-meta {
+      color: #636e72;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .search-meta i {
+      color: #ff5a5f;
+      margin-right: 8px;
+    }
+
+    .search-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .search-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      border-radius: 12px;
+      padding: 11px 16px;
+      font-weight: 600;
+      transition: 0.3s ease;
+      font-size: 0.95rem;
+    }
+
+    .search-btn-page {
+      background: #0f4c9c;
+      color: #fff;
+    }
+
+    .search-btn-page:hover {
+      background: #0c3d7c;
+    }
+
+    .search-btn-map {
+      background: #eef3fb;
+      color: #0f4c9c;
+    }
+
+    .search-btn-map:hover {
+      background: #dde8f7;
+    }
+
+    .empty-state {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 24px;
+      padding: 50px 30px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+      display: none;
+    }
+
+    .empty-state i {
+      font-size: 3rem;
+      color: #ff5a5f;
+      margin-bottom: 18px;
+    }
+
+    .empty-state h3 {
+      font-size: 1.8rem;
+      color: #2d3436;
+      margin-bottom: 10px;
+    }
+
+    .empty-state p {
+      color: #636e72;
+      line-height: 1.7;
+    }
+
+    mark {
+      background: #ffeaa7;
+      color: #2d3436;
+      padding: 1px 4px;
+      border-radius: 5px;
+    }
+
+    body.dark .search-results-section {
+      background: #0f1720;
+    }
+
+    body.dark .search-box-panel,
+    body.dark .search-card,
+    body.dark .empty-state {
+      background: #1e2a38;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.28);
+    }
+
+    body.dark .search-input-wrap {
+      background: #16202c;
+      border-color: #2e3b4c;
+    }
+
+    body.dark .search-input-wrap input {
+      color: #ecf0f1;
+    }
+
+    body.dark .search-input-wrap input::placeholder {
+      color: #95a5a6;
+    }
+
+    body.dark .search-summary h2,
+    body.dark .search-count,
+    body.dark .search-card-body h3,
+    body.dark .empty-state h3 {
+      color: #f5f6fa;
+    }
+
+    body.dark .search-summary p,
+    body.dark .search-meta,
+    body.dark .empty-state p {
+      color: #c7d0d9;
+    }
+
+    body.dark .search-btn-map {
+      background: #16202c;
+      color: #74b9ff;
+    }
+
+    body.dark .search-btn-map:hover {
+      background: #223041;
+    }
+
+    body.dark .search-card-tag {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    body.dark mark {
+      background: #fdcb6e;
+      color: #1e272e;
+    }
+
+    @media (max-width: 768px) {
+      .search-hero {
+        padding: 120px 6% 50px;
+      }
+
+      .search-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .search-box-panel {
+        margin-top: -25px;
+        padding: 15px;
+        border-radius: 20px;
+      }
+
+      .search-form-custom {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .search-submit-btn {
+        width: 100%;
+      }
+
+      .search-summary h2 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo"><i class="fas fa-map-marker-alt"></i> VISIT <span>JOHOR</span></a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+      <li><a href="alam.html" data-i18n="nav_nature">Alam</a></li>
+      <li><a href="makan.html" data-i18n="nav_food">Makan</a></li>
+      <li><a href="penginapan.html" data-i18n="nav_stay">Penginapan</a></li>
+      <li><a href="belibelah.html" data-i18n="nav_shop">Beli-Belah</a></li>
+    </ul>
+
+    <div class="menu-btn"><i class="fas fa-bars"></i></div>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <button class="lang-btn" id="langToggle" type="button" aria-label="Change language">MS</button>
+  </nav>
+
+  <section class="search-hero">
+    <span class="sub-title">Destinasi Pilihan Johor</span>
+    <h1>HASIL CARIAN</h1>
+    <p>Cari tempat menarik di Johor ikut kategori, lokasi, daerah atau nama destinasi dengan lebih mudah.</p>
+    <div class="search-pill">Carian: <span id="search-term">Semua tempat</span></div>
+  </section>
+
+  <section class="search-results-section">
+    <div class="search-box-panel">
+      <form class="search-form-custom" action="search.html" method="GET">
+        <div class="search-input-wrap">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            name="q"
+            id="search-input"
+            placeholder="Nak pergi ke mana? (cth: Muar, Desaru, JPO, Makan)"
+          >
+        </div>
+        <button type="submit" class="search-submit-btn">Jelajah</button>
+      </form>
+    </div>
+
+    <div class="search-summary">
+      <h2>Tempat yang dijumpai</h2>
+      <p>Tekan “Lihat Page” untuk pergi ke kategori berkaitan, atau “Map” untuk buka lokasi di Google Maps.</p>
+      <div class="search-count" id="result-count">Sedang mencari...</div>
+    </div>
+
+    <div class="search-grid" id="results-container"></div>
+
+    <div class="empty-state" id="no-result">
+      <i class="fas fa-search-location"></i>
+      <h3>Tiada hasil dijumpai</h3>
+      <p>Cuba cari kata kunci lain seperti <b>Johor Bahru</b>, <b>Makan</b>, <b>Desaru</b>, <b>Batu Pahat</b> atau <b>hotel</b>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <h3>VISIT <span>JOHOR</span></h3>
+      <p data-i18n="footer_desc">Official tourism guide to the Southern Gem of Malaysia.</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p class="copyright">© 2026 Visit Johor. Developed by Haney.</p>
+    </div>
+  </footer>
+
+  <script src="places-data.js"></script>
+  <script src="app.js"></script>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const qRaw = params.get("q") || "";
+    const query = qRaw.toLowerCase().trim();
+
+    const searchTermEl = document.getElementById("search-term");
+    const searchInput = document.getElementById("search-input");
+    const container = document.getElementById("results-container");
+    const noResult = document.getElementById("no-result");
+    const countEl = document.getElementById("result-count");
+
+    if (searchTermEl) {
+      searchTermEl.textContent = qRaw || "Semua tempat";
+    }
+
+    if (searchInput) {
+      searchInput.value = qRaw;
+    }
+
+    function escapeRegExp(string) {
+      return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    }
+
+    function highlight(text, keyword) {
+      if (!keyword) return text;
+      const safeKeyword = escapeRegExp(keyword);
+      const regex = new RegExp(`(${safeKeyword})`, "gi");
+      return text.replace(regex, "<mark>$1</mark>");
+    }
+
+    function matchesSearch(item, keyword) {
+      if (!keyword) return true;
+
+      const combinedText = [
+        item.name,
+        item.location,
+        item.category,
+        ...(item.keywords || [])
+      ].join(" ").toLowerCase();
+
+      return combinedText.includes(keyword);
+    }
+
+    function renderResults(results) {
+      container.innerHTML = "";
+
+      if (!results.length) {
+        countEl.textContent = `0 hasil dijumpai${qRaw ? ` untuk "${qRaw}"` : ""}`;
+        noResult.style.display = "block";
+        return;
+      }
+
+      noResult.style.display = "block";
+      noResult.style.display = "none";
+      countEl.textContent = `${results.length} hasil dijumpai${qRaw ? ` untuk "${qRaw}"` : ""}`;
+
+      results.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "search-card";
+
+        card.innerHTML = `
+          <div class="search-card-image" style="background-image: url('${item.img}')">
+            <span class="search-card-tag">${item.category}</span>
+          </div>
+          <div class="search-card-body">
+            <h3>${highlight(item.name, query)}</h3>
+            <p class="search-meta"><i class="fas fa-map-pin"></i>${highlight(item.location, query)}</p>
+            <p class="search-meta"><i class="fas fa-star"></i>⭐ ${item.rating} (${item.reviews} reviews)</p>
+            <p class="search-meta"><i class="fas fa-wallet"></i>${item.price}</p>
+            <div class="search-actions">
+              <a class="search-btn search-btn-page" href="${item.pageUrl}">
+                <i class="fas fa-arrow-right"></i> Lihat Page
+              </a>
+              <a class="search-btn search-btn-map" href="${item.mapUrl}" target="_blank">
+                <i class="fas fa-location-arrow"></i> Map
+              </a>
+            </div>
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    if (typeof allPlaces === "undefined") {
+      countEl.textContent = "Error: places-data.js tak dibaca";
+    } else {
+      const results = allPlaces.filter(item => matchesSearch(item, query));
+      renderResults(results);
+    }
+
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuBtn && navLinks) {
+      menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (!navbar) return;
+      if (window.scrollY > 50) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
+    });
+  </script>
+</body>
+</html>

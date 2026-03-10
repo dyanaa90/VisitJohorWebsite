@@ -1,0 +1,617 @@
+<!-- =========================
+     FILE: belibelah.html (FIX: app.js theme+language jalan)
+     ========================= -->
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syurga Beli-Belah | Visit Johor</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    .tag { background: #3498db !important; }
+    .btn-loc{
+      background:#3498db;
+      color:#fff;
+      border:none;
+      text-decoration:none;
+    }
+    .btn-loc:hover{ background:#2980b9; }
+
+    .card-actions a{ text-decoration:none; }
+    .theme-toggle, .lang-btn{ cursor:pointer; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo"><i class="fas fa-map-marker-alt"></i> VISIT <span>JOHOR</span></a>
+
+    <ul class="nav-links">
+  <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+  <li><a href="alam.html" data-i18n="nav_nature">Alam</a></li>
+  <li><a href="makan.html" data-i18n="nav_food">Makan</a></li>
+  <li><a href="penginapan.html" data-i18n="nav_stay">Penginapan</a></li>
+  <li><a href="belibelah.html" class="active" data-i18n="nav_shop">Beli-Belah</a></li>
+</ul>
+
+    <div class="menu-btn"><i class="fas fa-bars"></i></div>
+
+    <!-- ✅ Dark Mode Toggle (handled by app.js) -->
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <!-- ✅ Language Toggle (handled by app.js) -->
+    <button class="lang-btn" id="langToggle" type="button" aria-label="Change language">MS</button>
+  </nav>
+
+  <header class="hero" style="background-image:url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?q=80&w=1920&auto=format&fit=crop');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <span class="sub-title" data-i18n="shop_sub">Jimat, Borong, Santai</span>
+      <h1 data-i18n="shop_title">SYURGA BELI-BELAH</h1>
+      <p data-i18n="shop_desc">Dari Premium Outlets hingga pasar malam — jom cari barang best &amp; murah!</p>
+    </div>
+  </header>
+
+  <section class="destinations container">
+
+    <!-- ===================== ZON SELATAN ===================== -->
+    <div class="section-title" style="text-align:center; margin-bottom:40px; margin-top:40px;">
+      <h2 style="font-size:2.5rem; color:#2d3436;" data-i18n="shop_zone_south">🛍️ Zon Selatan (JB • Iskandar Puteri)</h2>
+      <div class="line" style="width:80px; height:4px; background:#3498db; margin:15px auto;"></div>
+      <p data-i18n="shop_zone_south_desc">Port shopping paling “meriah” dekat selatan Johor.</p>
+    </div>
+
+    <div class="card-grid">
+
+      <!-- Mid Valley Southkey -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/midvalley\ mall.webp');">
+          <span class="tag" data-i18n="tag_popular">Paling Popular</span>
+        </div>
+        <div class="card-body">
+          <h3>Mid Valley Southkey</h3>
+          <span class="rating-badge">⭐ 4.9</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Lebuhraya Tebrau, JB</p>
+          <p data-i18n="mv_desc">Mall besar &amp; premium di JB. Ada SOGO dan pawagam IMAX.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Mid+Valley+Southkey+Johor+Bahru" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paradigm Mall JB -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/paradigm.jpg');">
+          <span class="tag" data-i18n="tag_fun">Hiburan</span>
+        </div>
+        <div class="card-body">
+          <h3>Paradigm Mall Johor Bahru</h3>
+          <span class="rating-badge">⭐ 4.8</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Skudai, JB</p>
+          <p data-i18n="para_desc">Mall gergasi dengan gelanggang luncur ais &amp; aktiviti keluarga.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Paradigm+Mall+Johor+Bahru" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toppen & IKEA -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/toppen.avif');">
+          <span class="tag">IKEA</span>
+        </div>
+        <div class="card-body">
+          <h3>Toppen &amp; IKEA Tebrau</h3>
+          <span class="rating-badge">⭐ 4.8</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Tebrau, JB</p>
+          <p data-i18n="toppen_desc">Syurga perabot &amp; hiasan rumah. Sesuai untuk family &amp; couple.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Toppen+Shopping+Centre+Johor+Bahru" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pasar Karat -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/bazar\ karat.png');">
+          <span class="tag" data-i18n="tag_night">Pasar Malam</span>
+        </div>
+        <div class="card-body">
+          <h3>Pasar Karat (Bazar JB)</h3>
+          <span class="rating-badge">⭐ 4.7</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Bandar JB</p>
+          <p data-i18n="karat_desc">Syurga bundle, barang antik &amp; street food. Buka waktu malam.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Pasar+Karat+Johor+Bahru" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- City Square -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/citysquare.jpeg');">
+          <span class="tag" data-i18n="tag_border">Sempadan</span>
+        </div>
+        <div class="card-body">
+          <h3>Johor Bahru City Square</h3>
+          <span class="rating-badge">⭐ 4.6</span>
+          <p class="location"><i class="fas fa-map-pin"></i> CIQ Johor Bahru</p>
+          <p data-i18n="cs_desc">Dekat kastam Singapura. Sesuai untuk shopping cepat &amp; last minute.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Johor+Bahru+City+Square" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- KOMTAR JBCC -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/komtar.webp');">
+          <span class="tag" data-i18n="tag_city">Pusat Bandar</span>
+        </div>
+        <div class="card-body">
+          <h3>KOMTAR JBCC</h3>
+          <span class="rating-badge">⭐ 4.6</span>
+          <p class="location"><i class="fas fa-map-pin"></i> CIQ Johor Bahru</p>
+          <p data-i18n="komtar_desc">Mall moden dekat CIQ. Senang makan, shopping &amp; lepak.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=KOMTAR+JBCC" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- KSL City Mall -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/KSL%20City%20in%202010,%20Johor%20Bahru.jpg?width=1600');">
+          <span class="tag" data-i18n="tag_people">Rakyat</span>
+        </div>
+        <div class="card-body">
+          <h3>KSL City Mall</h3>
+          <span class="rating-badge">⭐ 4.5</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Jalan Seladang, JB</p>
+          <p data-i18n="ksl_desc">Port popular untuk shopping santai, makan-makan &amp; barang harian.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=KSL+City+Mall+Johor+Bahru" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- AEON Tebrau City -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/aeontbrau.webp');">
+          <span class="tag" data-i18n="tag_family">Keluarga</span>
+        </div>
+        <div class="card-body">
+          <h3>AEON Mall Tebrau City</h3>
+          <span class="rating-badge">⭐ 4.7</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Tebrau, JB</p>
+          <p data-i18n="aeon_tc_desc">Mall keluarga: shopping, makan &amp; hiburan — semua lengkap.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=AEON+Mall+Tebrau+City" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sutera Mall -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/sutera\ mall.jpg');">
+          <span class="tag" data-i18n="tag_relax">Santai</span>
+        </div>
+        <div class="card-body">
+          <h3>Sutera Mall</h3>
+          <span class="rating-badge">⭐ 4.4</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Skudai, JB</p>
+          <p data-i18n="sutera_desc">Mall kejiranan yang ramai orang suka. Banyak pilihan makanan.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Sutera+Mall+Johor+Bahru" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plaza Pelangi -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/plazapelangi.jpg');">
+          <span class="tag" data-i18n="tag_classic">Klasik</span>
+        </div>
+        <div class="card-body">
+          <h3>Plaza Pelangi</h3>
+          <span class="rating-badge">⭐ 4.2</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Taman Pelangi, JB</p>
+          <p data-i18n="pelangi_desc">Antara plaza lama di JB — sesuai untuk urusan ringkas &amp; cepat.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Plaza+Pelangi+Johor+Bahru" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sunway Big Box -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/sunway\ bigbox.webp');">
+          <span class="tag" data-i18n="tag_outdoor">Outdoor</span>
+        </div>
+        <div class="card-body">
+          <h3>Sunway Big Box Retail Park</h3>
+          <span class="rating-badge">⭐ 4.6</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Iskandar Puteri</p>
+          <p data-i18n="bigbox_desc">Konsep retail park (jalan kaki santai). Banyak kedai besar &amp; port family.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Sunway+Big+Box+Retail+Park" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- AEON Bukit Indah -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/aeon.jpg');">
+          <span class="tag" data-i18n="tag_family">Keluarga</span>
+        </div>
+        <div class="card-body">
+          <h3>AEON Mall Bukit Indah</h3>
+          <span class="rating-badge">⭐ 4.6</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Bukit Indah</p>
+          <p data-i18n="aeon_bi_desc">Mall besar kawasan barat JB. Sesuai untuk shopping harian &amp; makan-makan.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=AEON+Mall+Bukit+Indah" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===================== ZON BARAT / UTARA (KULAI) ===================== -->
+    <div class="section-title" style="text-align:center; margin-bottom:40px; margin-top:60px;">
+      <h2 style="font-size:2.5rem; color:#2d3436;" data-i18n="shop_zone_kulai">👠 Zon Barat/Utara (Kulai)</h2>
+      <div class="line" style="width:80px; height:4px; background:#74b9ff; margin:15px auto;"></div>
+    </div>
+
+    <div class="card-grid">
+
+      <!-- JPO -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/jpo.webp');">
+          <span class="tag" data-i18n="tag_premium">Premium</span>
+        </div>
+        <div class="card-body">
+          <h3>Johor Premium Outlets (JPO)</h3>
+          <span class="rating-badge">⭐ 4.9</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Indahpura, Kulai</p>
+          <p data-i18n="jpo_desc">Barang berjenama dengan diskaun besar. Sesuai untuk memburu tawaran.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Johor+Premium+Outlets" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- AEON Kulai -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/aeonkulai.jpg');">
+          <span class="tag" data-i18n="tag_family">Keluarga</span>
+        </div>
+        <div class="card-body">
+          <h3>AEON Mall Kulai</h3>
+          <span class="rating-badge">⭐ 4.5</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Indahpura, Kulai</p>
+          <p data-i18n="aeon_kulai_desc">Tempat lepak orang Kulai. Lengkap untuk makan, beli-belah &amp; santai.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=AEON+Mall+Kulai" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- IOI Mall Kulai -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/ioimallkulai.jpg');">
+          <span class="tag" data-i18n="tag_mall">Mall</span>
+        </div>
+        <div class="card-body">
+          <h3>IOI Mall Kulai</h3>
+          <span class="rating-badge">⭐ 4.3</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Bandar Putra, Kulai</p>
+          <p data-i18n="ioi_kulai_desc">Mall kejiranan yang selesa &amp; mudah diakses. Sesuai untuk shopping santai.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=IOI+Mall+Kulai" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===================== ZON TENGAH (BATU PAHAT • KLUANG) ===================== -->
+    <div class="section-title" style="text-align:center; margin-bottom:40px; margin-top:60px;">
+      <h2 style="font-size:2.5rem; color:#2d3436;" data-i18n="shop_zone_central">🏢 Zon Tengah (Batu Pahat • Kluang)</h2>
+      <div class="line" style="width:80px; height:4px; background:#0984e3; margin:15px auto;"></div>
+    </div>
+
+    <div class="card-grid">
+
+      <!-- Batu Pahat Mall -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/bpmall.jpg');">
+          <span class="tag" data-i18n="tag_big">Besar</span>
+        </div>
+        <div class="card-body">
+          <h3>Batu Pahat Mall</h3>
+          <span class="rating-badge">⭐ 4.6</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Jalan Kluang, Batu Pahat</p>
+          <p data-i18n="bp_desc">Mall utama di BP. Sesuai untuk seisi keluarga &amp; mudah cari makanan.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Batu+Pahat+Mall" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Old Street Commercial -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/oldstreet.jpg');">
+          <span class="tag" data-i18n="tag_hipster">Hipster</span>
+        </div>
+        <div class="card-body">
+          <h3>Old Street Commercial</h3>
+          <span class="rating-badge">⭐ 4.5</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Batu Pahat</p>
+          <p data-i18n="oldstreet_desc">Kawasan cantik ala Eropah. Banyak butik &amp; port bergambar.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Old+Street+Commercial+Centre+Batu+Pahat" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kluang Mall -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/kluangmall.jpg');">
+          <span class="tag" data-i18n="tag_centre">Pusat</span>
+        </div>
+        <div class="card-body">
+          <h3>Kluang Mall</h3>
+          <span class="rating-badge">⭐ 4.6</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Pusat Bandar, Kluang</p>
+          <p data-i18n="kluang_desc">Mall moden &amp; selesa. Sesuai untuk berjalan santai &amp; makan-makan.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Kluang+Mall" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===================== ZON UTARA (MUAR • TANGKAK • SEGAMAT) ===================== -->
+    <div class="section-title" style="text-align:center; margin-bottom:40px; margin-top:60px;">
+      <h2 style="font-size:2.5rem; color:#2d3436;" data-i18n="shop_zone_north">🛒 Zon Utara (Muar • Tangkak • Segamat)</h2>
+      <div class="line" style="width:80px; height:4px; background:#81ecec; margin:15px auto;"></div>
+    </div>
+
+    <div class="card-grid">
+
+      <!-- Wetex Parade -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/wetex.jpg');">
+          <span class="tag" data-i18n="tag_local">Tempatan</span>
+        </div>
+        <div class="card-body">
+          <h3>Wetex Parade</h3>
+          <span class="rating-badge">⭐ 4.4</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Jalan Ali, Muar</p>
+          <p data-i18n="wetex_desc">Mall utama di Muar. Mudah untuk cari barang keperluan &amp; makan.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Wetex+Parade+Muar" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Uptown Maharani -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/uptownmaharani.jpg');">
+          <span class="tag" data-i18n="tag_night">Malam</span>
+        </div>
+        <div class="card-body">
+          <h3>Uptown Maharani</h3>
+          <span class="rating-badge">⭐ 4.3</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Tanjung Emas, Muar</p>
+          <p data-i18n="uptown_desc">Bazar larut malam. Cari bundle, aksesori &amp; pelbagai pilihan murah.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Uptown+Maharani+Muar" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pusat Tekstil Tangkak -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/pusattangkak.webp');">
+          <span class="tag" data-i18n="tag_textile">Tekstil</span>
+        </div>
+        <div class="card-body">
+          <h3>Pusat Tekstil Tangkak</h3>
+          <span class="rating-badge">⭐ 4.8</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Bandar Tangkak</p>
+          <p data-i18n="tangkak_desc">Syurga kain Johor! Banyak pilihan kain ela dengan harga berbaloi.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Tangkak+Textile+Centre" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- One Segamat -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/onesegamat.jpg');">
+          <span class="tag" data-i18n="tag_mall">Mall</span>
+        </div>
+        <div class="card-body">
+          <h3>One Segamat</h3>
+          <span class="rating-badge">⭐ 4.2</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Pusat Bandar, Segamat</p>
+          <p data-i18n="segamat_desc">Mall utama di Segamat. Sesuai untuk family &amp; aktiviti hujung minggu.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=One+Segamat" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pasar Awam Pontian -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/pasar\ awam\ pontian.avif');">
+          <span class="tag" data-i18n="tag_fresh">Segar</span>
+        </div>
+        <div class="card-body">
+          <h3>Pasar Awam Pontian</h3>
+          <span class="rating-badge">⭐ 4.8</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Pontian</p>
+          <p data-i18n="pontian_desc">Bukan mall, tapi port terbaik untuk ikan segar &amp; barang dapur murah.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Pasar+Awam+Pontian" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ===================== ZON TIMUR (KOTA TINGGI • MERSING) ===================== -->
+    <div class="section-title" style="text-align:center; margin-bottom:40px; margin-top:60px;">
+      <h2 style="font-size:2.5rem; color:#2d3436;" data-i18n="shop_zone_east">🌊 Zon Timur (Kota Tinggi • Mersing)</h2>
+      <div class="line" style="width:80px; height:4px; background:#00cec9; margin:15px auto;"></div>
+    </div>
+
+    <div class="card-grid">
+
+      <!-- Desaru Coast Riverside -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/riverside.jpg');">
+          <span class="tag" data-i18n="tag_lifestyle">Gaya Hidup</span>
+        </div>
+        <div class="card-body">
+          <h3>Desaru Coast Riverside</h3>
+          <span class="rating-badge">⭐ 4.7</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Desaru, Kota Tinggi</p>
+          <p data-i18n="desaru_desc">Kawasan cantik untuk beli cenderamata &amp; santai ala resort.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Desaru+Coast+Riverside" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pusat Keropok Mersing -->
+      <div class="pro-card reveal">
+        <div class="card-image" style="background-image:url('img.jpg/keropokmersing.jpg');">
+          <span class="tag" data-i18n="tag_souvenir">Oleh-oleh</span>
+        </div>
+        <div class="card-body">
+          <h3>Pusat Keropok Mersing</h3>
+          <span class="rating-badge">⭐ 4.7</span>
+          <p class="location"><i class="fas fa-map-pin"></i> Jalan Jemaluang, Mersing</p>
+          <p data-i18n="mersing_desc">Port beli keropok, hasil laut kering &amp; makanan untuk dibawa balik.</p>
+          <div class="card-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Pusat+Keropok+Mersing" target="_blank" class="btn-action btn-loc">
+              <i class="fas fa-location-arrow"></i> <span data-i18n="btn_map">Map</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ✅ FOOTER (ikut makan.html) -->
+  <footer>
+    <div class="footer-content">
+      <h3>VISIT <span>JOHOR</span></h3>
+      <p data-i18n="footer_desc">Official tourism guide to the Southern Gem of Malaysia.</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p class="copyright">© 2026 Visit Johor. Developed by Haney.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Menu Toggle
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    if (menuBtn && navLinks) {
+      menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    // Scroll Reveal Animation
+    function reveal(){
+      const reveals = document.querySelectorAll('.reveal');
+      for(let i=0; i<reveals.length; i++){
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        if(elementTop < windowHeight - 150){
+          reveals[i].classList.add('active');
+        }
+      }
+    }
+    window.addEventListener('scroll', reveal);
+    reveal(); // run sekali masa load
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if(!navbar) return;
+      if(window.scrollY > 50) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
+    });
+  </script>
+
+  <script src="app.js"></script>
+  <script src="places-data.js"></script>
+</body>
+</html>
